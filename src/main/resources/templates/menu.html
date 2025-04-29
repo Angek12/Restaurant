@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+    <div th:replace="layout :: nav"></div>
+    
+    <div class="container py-5">
+        <h1 class="text-center mb-5">Our Menu</h1>
+        
+        <!-- Menu Categories -->
+        <ul class="nav nav-pills justify-content-center mb-5">
+            <li class="nav-item">
+                <a class="nav-link active" href="#starters">Starters</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#main-courses">Main Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#desserts">Desserts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#beverages">Beverages</a>
+            </li>
+        </ul>
+        
+        <!-- Starters -->
+        <div id="starters" class="menu-section mb-5">
+            <h2 class="text-center mb-4">Starters</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title">Caesar Salad</h5>
+                                <span class="text-primary">$8.99</span>
+                            </div>
+                            <p class="card-text">Fresh romaine lettuce, parmesan cheese, croutons, and our special Caesar dressing</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more starter items -->
+            </div>
+        </div>
+        
+        <!-- Main Courses -->
+        <div id="main-courses" class="menu-section mb-5">
+            <h2 class="text-center mb-4">Main Courses</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title">Grilled Salmon</h5>
+                                <span class="text-primary">$24.99</span>
+                            </div>
+                            <p class="card-text">Fresh Atlantic salmon with seasonal vegetables and lemon butter sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more main course items -->
+            </div>
+        </div>
+        
+        <!-- Desserts -->
+        <div id="desserts" class="menu-section mb-5">
+            <h2 class="text-center mb-4">Desserts</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title">Chocolate Fondant</h5>
+                                <span class="text-primary">$9.99</span>
+                            </div>
+                            <p class="card-text">Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more dessert items -->
+            </div>
+        </div>
+        
+        <!-- Beverages -->
+        <div id="beverages" class="menu-section">
+            <h2 class="text-center mb-4">Beverages</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title">Fresh Fruit Smoothie</h5>
+                                <span class="text-primary">$5.99</span>
+                            </div>
+                            <p class="card-text">Blend of seasonal fruits with yogurt and honey</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more beverage items -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+    <div th:replace="layout :: nav"></div>
+    
+    <div class="container-fluid p-0">
+        <!-- Hero Section -->
+        <div class="position-relative">
+            <img src="/images/restaurant-hero.jpg" class="w-100" style="height: 600px; object-fit: cover;" alt="Restaurant">
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                <h1 class="display-3 fw-bold">Welcome to Our Restaurant</h1>
+                <p class="lead">Experience the finest dining and management</p>
+                <a href="/menu" class="btn btn-lg btn-primary me-2">View Menu</a>
+                <a href="/register" class="btn btn-lg btn-outline-light">Register Now</a>
+            </div>
+        </div>
+        
+        <!-- Features Section -->
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-utensils fa-3x mb-3 text-primary"></i>
+                            <h3>Quality Equipment</h3>
+                            <p>We maintain the highest standards with our kitchen equipment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                            <h3>Expert Staff</h3>
+                            <p>Our team of professionals ensures the best service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-star fa-3x mb-3 text-primary"></i>
+                            <h3>Premium Experience</h3>
+                            <p>Enjoy a luxurious dining experience with us</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

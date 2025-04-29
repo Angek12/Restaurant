@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+    <div th:replace="layout :: nav"></div>
+    
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Utensils Management</h2>
+            <a href="/utensils/new" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Add New Utensil
+            </a>
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Quantity</th>
+                        <th>Condition</th>
+                        <th>Location</th>
+                        <th>Last Maintenance</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="utensil : ${utensils}">
+                        <td th:text="${utensil.id}"></td>
+                        <td th:text="${utensil.name}"></td>
+                        <td th:text="${utensil.category}"></td>
+                        <td th:text="${utensil.quantity}"></td>
+                        <td th:text="${utensil.condition}"></td>
+                        <td th:text="${utensil.location}"></td>
+                        <td th:text="${utensil.lastMaintenance}"></td>
+                        <td>
+                            <a th:href="@{/utensils/edit/{id}(id=${utensil.id})}" class="btn btn-sm btn-warning">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a th:href="@{/utensils/delete/{id}(id=${utensil.id})}" class="btn btn-sm btn-danger"
+                               onclick="return confirm('Are you sure you want to delete this utensil?')">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

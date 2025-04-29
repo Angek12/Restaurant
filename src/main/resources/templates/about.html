@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+    <div th:replace="layout :: nav"></div>
+    
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="display-4 mb-4">About Our Restaurant</h1>
+                <p class="lead">Welcome to our prestigious establishment, where culinary excellence meets exceptional service.</p>
+                <p>Founded in 2020, our restaurant has been serving the community with dedication and passion. We take pride in our:</p>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check text-success me-2"></i>Professional kitchen staff</li>
+                    <li><i class="fas fa-check text-success me-2"></i>High-quality ingredients</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Exceptional customer service</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Modern facilities</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <img src="/images/about-restaurant.jpg" class="img-fluid rounded shadow" alt="Restaurant Interior">
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-trophy fa-3x text-primary mb-3"></i>
+                        <h3>Our Mission</h3>
+                        <p>To provide an exceptional dining experience through quality food and service.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-heart fa-3x text-primary mb-3"></i>
+                        <h3>Our Values</h3>
+                        <p>Quality, integrity, and customer satisfaction are at the heart of everything we do.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-star fa-3x text-primary mb-3"></i>
+                        <h3>Our Vision</h3>
+                        <p>To be the leading restaurant in providing memorable dining experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

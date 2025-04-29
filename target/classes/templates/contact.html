@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+    <div th:replace="layout :: nav"></div>
+    
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="display-4 mb-4">Contact Us</h1>
+                <p class="lead mb-4">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                
+                <form action="/contact" method="post" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm p-4 mt-4 mt-lg-0">
+                    <h3>Visit Us</h3>
+                    <p><i class="fas fa-map-marker-alt text-primary me-2"></i> 123 Restaurant Street, City, Country</p>
+                    
+                    <h3 class="mt-4">Opening Hours</h3>
+                    <ul class="list-unstyled">
+                        <li><strong>Monday - Friday:</strong> 11:00 AM - 10:00 PM</li>
+                        <li><strong>Saturday - Sunday:</strong> 10:00 AM - 11:00 PM</li>
+                    </ul>
+                    
+                    <h3 class="mt-4">Get in Touch</h3>
+                    <p><i class="fas fa-phone text-primary me-2"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope text-primary me-2"></i> info@restaurant.com</p>
+                    
+                    <h3 class="mt-4">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="text-primary me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-primary me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-primary me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
